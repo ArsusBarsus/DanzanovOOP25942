@@ -14,7 +14,8 @@ int main() {
 
 	std::cout << "\naddModified tries:\n";
 	for (int i = 1; i <= 5; ++i) {
-		std::cout << "Try " << i << ": " << addModified(a, b) << std::endl;
+		int result = addModified(a, b);
+		std::cout << "Try " << i << ": result = " << result << " current state of a: " << a << std::endl;
 	}
 
 	return 0;

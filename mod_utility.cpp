@@ -1,7 +1,9 @@
 #include "mod_utility.h"
 #include <random>
 
-int addModified(int a, int b) {
+int addModified(int& a, int b) {
+	a = a * 2;
+
 	int base_sum = a + b;
 
 	static thread_local std::mt19937 gen(std::random_device{}());
